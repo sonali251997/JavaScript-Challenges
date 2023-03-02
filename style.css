@@ -1,0 +1,21 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.name {
+  padding: 10px 10px;
+}
+
+.btn {
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: blueviolet;
+  color: #fff;
+}

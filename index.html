@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript Practice Question</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>JavaScript Questions</h1>
+    </div>
+    <div class="firstQuestion">
+      <h2>
+        1. Write a function that given the input string name, returns the
+        greeting statement Hello,<span style="color: darkorange"
+          >&lt;name&gt;</span
+        >
+        how are you doing today?
+      </h2>
+      <input type="text" class="name" id="greet" />
+      <button class="btn" onclick="greet()">Show Output</button>
+      <h3 id="text1"></h3>
+    </div>
+    <div class="secondQuestion">
+      <h2>
+        2. Given a word, your job is to return the middle character(s) of the
+        word. If the word's length is odd, return the middle character. If the
+        word's length is even, return the middle 2 characters.
+      </h2>
+      <input type="text" id="input" class="name" />
+      <button class="btn" id="submit" onclick="middleString()">
+        Show Output
+      </button>
+      <h3 id="text2"></h3>
+    </div>
+    <div class="thirdQuestion">
+      <h2>
+        3. Return the number (count) of vowels (a, e, i, o, u) in the given
+        string. The input string will only consist of lower case letters and/or
+        spaces.
+      </h2>
+      <input type="text" id="inputstring" class="name" />
+      <button class="btn" id="submit" onclick="countVowel()">
+        Show Output
+      </button>
+      <h3 id="text3"></h3>
+    </div>
+    <div class="fourthQuestion">
+      <h2>
+        4. Write a JavaScript program to display the current day and time in the
+        following format.
+      </h2>
+      <button class="btn" id="submit" onclick="dateTime()">Show Output</button>
+      <h3 id="date"></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
