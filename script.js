@@ -171,3 +171,23 @@ const scramble = (str1, str2) => {
 };
 
 console.log(scramble("scriptjava", "javascript"));
+
+// Question 14 Write a function that given an integer array nums of length n, returns an array of length 2n where nums is concatenated to itself. Do not use concat method.
+
+const getConcatenation = (string, nums) => {
+  if (nums > 0) {
+    return string.repeat(nums);
+  } else {
+    return " ";
+  }
+};
+
+console.log(getConcatenation("abcd", 2));
+
+// Question 15 Write a function that given an input URL, returns its domain name.
+const domainName = (url) => {
+  return url.replace(/.+\/\/|www.|\..+/g, "");
+};
+console.log(domainName("www.google.ca"));
+
+// Question 16 Given a non-empty string s containing just the characters (, ), {, }, [, ], determine if the input string is valid. An input string is valid if open brackets are closed by the same type of brackets, and open brackets are closed in the correct order.
