@@ -190,4 +190,28 @@ const domainName = (url) => {
 };
 console.log(domainName("www.google.ca"));
 
-// Question 16 Given a non-empty string s containing just the characters (, ), {, }, [, ], determine if the input string is valid. An input string is valid if open brackets are closed by the same type of brackets, and open brackets are closed in the correct order.
+// Question 16 Implement a function that takes an iterable argument (a string or an array) as input and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
+
+const uniqueInOrder = (iterable) => {
+  const string = Array.isArray(iterable) ? iterable : iterable.split("");
+  const unique = string.filter((letter, i) => {
+    return string[i] !== string[i + 1];
+  });
+  return unique;
+};
+console.log(uniqueInOrder("ABBCcAD"));
+
+// Question 17 Write a function that will return the count of distinct case-insensitive alphanumeric characters that occur more than once in the input string.
+
+const duplicateCount = (text) => {
+  var str = text.toUpperCase().split("").sort().join("");
+  var arr = str.match(/(.)\1+/g);
+  if (arr == null) {
+    return 0;
+  } else {
+    return arr.length;
+  }
+};
+console.log(duplicateCount("abA11"));
+console.log(duplicateCount("aabbcde"));
+console.log(duplicateCount("aabBcdeE"));
