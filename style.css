@@ -19,3 +19,24 @@
   background-color: blueviolet;
   color: #fff;
 }
+
+.circle {
+  width: 205px;
+  height: 205px;
+  display: inline-block;
+  border: #000 solid 1px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.circle::before {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  border-radius: 50%;
+  background: olive;
+  width: 200px;
+  height: 200px;
+  content: " ";
+}
