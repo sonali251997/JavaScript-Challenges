@@ -228,3 +228,15 @@ function secondLargest(arr) {
 
 arr = [4, 2, 1, 3, 5];
 console.log(`The second largest element is: ${secondLargest(arr)}`);
+
+// Question 19 Without using inbuilt function find the dublicate array
+
+const numberOfArray = [7, 2, 6, 8, 2, 7, 6, 99, 2, 88, 99, 5, 9, 1, 99, 1];
+
+const dublicate = (data) => {
+  return data
+    .filter((value, index) => data.indexOf(value) === index)
+    .sort((a, b) => a - b);
+};
+
+console.log(dublicate(numberOfArray));
