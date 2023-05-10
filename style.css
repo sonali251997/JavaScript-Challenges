@@ -40,3 +40,15 @@
   height: 200px;
   content: " ";
 }
+
+.topheader {
+  position: relative;
+  height: 20px;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid;
+}
